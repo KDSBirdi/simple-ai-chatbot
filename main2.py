@@ -3,6 +3,7 @@ from streamlit_chat import message
 from bardapi import Bard
 import json
 
+#just to hide the token and store it in json file and accessing the token from json file
 with open('credentials.json', 'r') as f:
     file = json.load(f)
     token = file['token']
@@ -14,7 +15,7 @@ def generate_response(prompt):
     return response
 #function to recieve user queries
 def get_text():
-    input_text=st.text_input("CN bot: ",key="input")
+    input_text=st.text_input("MY bot: ",key="input")
     return input_text
 #title of the steamlit app
 st.title('personal tutoring bot')
