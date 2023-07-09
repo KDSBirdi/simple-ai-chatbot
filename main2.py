@@ -7,8 +7,6 @@ with open('credentials.json', 'r') as f:
     file = json.load(f)
     token = file['token']
 
-# token = 'YAhUzVY1NRIOcyssp5DAbwI8p37J4IxM_fPlVXhlYabBTW3eikWRSerQiIhGr2-m-clSFg.'
-
 #function to generate the output
 def generate_response(prompt):
     bard = Bard(token=token)
